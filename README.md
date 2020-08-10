@@ -1,2 +1,2 @@
 # myzomato-rest-api
-created a website with zomato resful api and integtrated into my-zomato website
+Created a website with zomato resful api and integrated into my-zomato website
