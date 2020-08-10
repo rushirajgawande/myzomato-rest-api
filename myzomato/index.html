@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>zomato</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="" href="css/animate.css">
+    <link rel="index.html" href="css/custom.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#CB202D;">
+      <div class="container">
+        <a class="navbar-brand" href="#"> <img src="https://b.zmtcdn.com/images/zomato_white_logo_new.svg" alt=""> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <style media="screen">
+          @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+          nav .nav-link{
+          font-family: 'Montserrat', sans-serif;
+          }
+          nav .nav-link:hover{
+          /* background-color: #fff; */
+          background-color: rgba(255,255,255,0.2);
+          border-radius: 2px;
+          }
+        </style>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Log In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" class="btn btn-default">Create Account</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br><br>
+    <style media="screen">
+      #side-filter-table{
+      font-size: 12px;
+      }
+      #side-filter-table td{
+      cursor: pointer;
+      }
+      #side-filter-table td:hover{
+      transition: .3s all;
+      }
+      #side-filter-table tr:hover{
+      color: red;
+      box-shadow: 0px 0px 5px grey;
+      border-radius: 5px;
+      transition: .5s all;
+      }
+    </style>
+    <div class="container" id="side-filter-table" >
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <h2 class="title" id="citytitleline">Order food online in Pune</h2>
+          <br>
+        </div>
+        <div class="col-md-2">
+          <table  class="table table-bordered">
+            <tr>
+              <td>
+                Filter
+                <br>
+                <input type="checkbox">
+                <small  class="text-justify">Zomato Gold partner</small>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="custom-control custom-checkbox mr-sm-2">
+                  <input type="checkbox" class="custom-control-input" id="customControlVeg">
+                  <label class="custom-control-label" for="customControlVeg">Apply Coupon</label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Quick Filter
+                <div class="custom-control custom-checkbox mr-sm-2">
+                  <input type="checkbox" class="custom-control-input" id="customControlVeg">
+                  <label class="custom-control-label" for="customControlVeg">Veg</label>
+                </div>
+                <div class="custom-control custom-checkbox mr-sm-2">
+                  <input type="checkbox" class="custom-control-input" id="customControlNVeg">
+                  <label class="custom-control-label" for="customControlNVeg">Non-Veg</label>
+                </div>
+                <div class="custom-control custom-checkbox mr-sm-2">
+                  <input type="checkbox" class="custom-control-input" id="customControlChinese">
+                  <label class="custom-control-label" for="customControlChinese">Chinese</label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Sort by
+                <br>
+                <small style="color:green">
+                <b>Popularity</b>
+                </small>-
+                <small style="color:grey">
+                <b>high to low</b>
+                </small>
+                <br>Delivery Rating -
+                <small style="color:grey">
+                <b>high to low</b>
+                </small>
+                <br>Rating -
+                <small style="color:grey">
+                <b>high to low</b>
+                </small>
+                <br>Recently Added -
+                <small style="color:grey">
+                <b>new to old</b>
+                </small>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Cuisine
+                <table  class="table table-borderless">
+                  <tr>
+                    <th scope="col"> </th>
+                    <th scope="col"> </th>
+                  </tr>
+                  <tbody>
+                    <tr>
+                      <td>North Indian</td>
+                      <td>115</td>
+                    </tr>
+                    <tr>
+                      <td>  Chinese</td>
+                      <td> 81</td>
+                    </tr>
+                    <tr>
+                      <td>Continental </td>
+                      <td>68</td>
+                    </tr>
+                    <tr>
+                      <td>Italian</td>
+                      <td> 67</td>
+                    </tr>
+                    <tr>
+                      <td>Asian</td>
+                      <td> 41</td>
+                    </tr>
+                    <tr>
+                      <td>Fast Food</td>
+                      <td> 39</td>
+                    </tr>
+                    <tr>
+                      <td>Pizza</td>
+                      <td> 33</td>
+                    </tr>
+                    <tr>
+                      <td>Mughlai</td>
+                      <td>32</td>
+                    </tr>
+                    <tr>
+                      <td>Salad</td>
+                      <td> 30</td>
+                    </tr>
+                    <tr>
+                      <td>Desserts</td>
+                      <td> 29</td>
+                    </tr>
+                    <tr>
+                      <td>See all cuisines</td>
+                    </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Delivery Time
+                <table class="table table-borderless">
+                  <tr>
+                    <th scope="col"> </th>
+                    <th scope="col"> </th>
+                  </tr>
+                  <tbody>
+                    <tr>
+                      <td>Up to 30 minutes</td>
+                      <td>21</td>
+                    </tr>
+                    <tr>
+                      <td>Up to 45 minutes</td>
+                      <td>22</td>
+                    </tr>
+                    <tr>
+                      <td>Up to 60 minutes</td>
+                      <td> 25</td>
+                    </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Cost for two
+                <table class="table table-borderless">
+                  <tr>
+                    <th scope="col"> </th>
+                    <th scope="col"> </th>
+                  </tr>
+                  <tbody>
+                    <tr>
+                      <td>Less than ₹250</td>
+                      <td>8</td>
+                    </tr>
+                    <tr>
+                      <td>₹250 to ₹500</td>
+                      <td>12</td>
+                    </tr>
+                    <tr>
+                      <td>₹500 to ₹1,000</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td>₹1,000 to ₹1,500</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>₹1,500 to ₹2,500</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>₹2,500 +</td>
+                      <td>0</td>
+                    </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Minimum Order
+                <table class="table table-borderless">
+                  <tr>
+                    <th scope="col"> </th>
+                    <th scope="col"> </th>
+                  </tr>
+                  <tbody>
+                    <tr>
+                      <td>No minimum order</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td>Up to ₹150</td>
+                      <td>25</td>
+                    </tr>
+                    <tr>
+                      <td>Up to ₹250</td>
+                      <td>25</td>
+                    </tr>
+                    <tr>
+                      <td>Up to ₹500</td>
+                      <td>25</td>
+                    </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-body">
+                  <div class="form-row">
+                    <div class="col-auto">
+                      <label for="">Search location</label>
+                      <br>
+                      <label class="sr-only" for="inlineFormInputGroup"></label>
+                      <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="fas fa-search"></i></div>
+                        </div>
+                        <input type="text" class="form-control" onkeyup="searchmycity(this.value)" id="input_searchmycity" placeholder="search location....">
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <label for="">Search location</label>
+                      <br>
+                      <label class="sr-only" for="inlineFormInputGroup"></label>
+                      <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="fas fa-search"></i></div>
+                        </div>
+                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="searching for restaurant....">
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <label for="">Set Cuisine</label>
+                      <br>
+                      <label class="sr-only" for="inlineFormInputGroup"></label>
+                      <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="fas fa-search"></i></div>
+                        </div>
+                        <select class="form-control" name="" onchange="" id="available-cuisines">
+                          <option value="">Select Cuisine</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row" id="locationresults">
+          </div>
+          <div class="row" id="finalresults">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+    <style media="screen">
+      #change{
+      background:green;
+      box-shadow: 0 0 1px #ccc;
+      border: 0px
+      color: #fff;
+      }
+      #change:hover{
+      -webkit-transform: scale(1.1);
+      background:#099E44;
+      }
+    </style>
+    <footer  style="background-color:#911c25;color:#fff;">
+      <div class="container p-3">
+        <div class="row">
+          <div class="col-md-1 col-sm-3">
+            <img src="https://b.zmtcdn.com/images/logo/zomato_flat_bg_logo.svg" class="img-rounded" alt="" style=" align:center;width=80%">
+          </div>
+          <div class="col-md-2 ml-auto">
+            <div class="form-group">
+              <select class="btn btn-danger" name="" style="width:100%;">
+                <option value="" selected >India</option>
+                <option value="" selected >UK</option>
+                <option value="" selected >USA</option>
+                <option value="" selected >JAPAN</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-12" style="border-bottom:1px solid grey;margin-top:10px;margin-bottom:5px;">
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <h6 class="display-3">About Zomato</h6>
+            <ul>
+              <li class="display-5"> <a class="link-default" href="#">How it works?</a> </li>
+              <li class="display-5"> <a class="link-default" href="#">How it works?</a> </li>
+              <li class="display-5"> <a class="link-default" href="#">How it works?</a> </li>
+              <li class="display-5"> <a class="link-default" href="#">How it works?</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/0f94e20165.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript">
+      setdefaultresults();
+    </script>
+  </body>
+</html>
